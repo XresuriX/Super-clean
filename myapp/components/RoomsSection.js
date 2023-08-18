@@ -33,6 +33,21 @@ const RoomsSection = () => {
       altText: 'CleanKitchen',
       title: 'CleanKitchen',
     },
+    {
+        imageSrc: front,
+        altText: 'Room',
+        title: 'Room',
+      },
+      {
+        imageSrc: liveroom,
+        altText: 'Livingroom',
+        title: 'LivingRoom',
+      },
+      {
+        imageSrc: cleanKitchen,
+        altText: 'CleanKitchen',
+        title: 'CleanKitchen',
+      },
   ];
 
   return (
@@ -45,21 +60,21 @@ const RoomsSection = () => {
           </p>
           <ul className="py-5 sm:py-9 px-7 bg-secondary">
             <li className="grid items-center grid-cols-[32px_auto] my-1">
-              <Image src={broom} height={450} width={300} alt="broom" />
-              <span className="text-white text-base font-light">Hands on cleaning approach</span>
+              <img src="https://images.pexels.com/photos/3977512/pexels-photo-3977512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="broom" />
+              <span className="text-white text-base font-light ml-2">Hands on cleaning approach</span>
             </li>
             <li className="grid items-center grid-cols-[32px_auto] my-1">
-              <img src="https://images.pexels.com/photos/4353608/pexels-photo-4353608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <span className="text-white font-barlow text-base font-light">Efficent and Repectful</span>
+              <img src="https://images.pexels.com/photos/48889/cleaning-washing-cleanup-the-ilo-48889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="mop" />
+              <span className="text-white font-barlow text-base font-light ml-2">Efficent and Repectful</span>
             </li>
             <li className="grid items-center grid-cols-[32px_auto] my-1">
-              <img src="https://images.pexels.com/photos/4353608/pexels-photo-4353608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-              <span className="text-white font-barlow text-base font-light">One Stop Shop for all Cleaning Needs</span>
+              <img src="https://images.pexels.com/photos/4108683/pexels-photo-4108683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="spounge" />
+              <span className="text-white font-barlow text-base font-light ml-2">One Stop Shop for all Cleaning Needs</span>
             </li>
           </ul>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[4px]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[8px]">
           {rooms.map((room, index) => (
             <RoomItem
               key={index}
