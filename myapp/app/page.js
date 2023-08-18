@@ -1,8 +1,8 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import RoomsSection from '@/components/RoomsSection'
+import RoomSection from '@/components/RoomSection'
 import Service from '@/components/Service/Service'
-import Image from 'next/image'
+import TestimonialSection from '@/components/TestimonialSection'
 
 
 export default function Home() {
@@ -10,7 +10,8 @@ export default function Home() {
    <main>
     <Header />
     <Service />
-    <RoomsSection />
+    <RoomSection />
+    <TestimonialSection />
     <Footer />
    </main>
   )

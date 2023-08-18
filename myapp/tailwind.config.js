@@ -16,6 +16,8 @@ module.exports = {
       },
       backgroundImage: {
         'header-image': "linear-gradient(rgba(0,0,0,.8), rgba(0,0,0, .8)), url('../public/header.png')",
+        'parallax-image': "linear-gradient(rgba(0,0,0,.8), rgba(0,0,0, .8)), url('../public/header.png')",
+
       },
     },
   },

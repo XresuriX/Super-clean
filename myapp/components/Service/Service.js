@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import ServiceItem from './ServiceItem'
 import kitchen from "../../public/kitchen.png"
 import livingroom from "../../public/livingroom.png"
@@ -50,3 +49,4 @@ const Service = () => {
 }
 
 export default Service
+
