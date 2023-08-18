@@ -28,9 +28,9 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-xl font-semibold mb-4">DonutConnect</h3>
+            <h3 className="text-xl font-semibold mb-4">VKS Cleaning</h3>
             <p className="text-gray-500">
-              Join the ultimate donut lovers' community and share the joy of delectable donuts. Connect, indulge, and explore the world of sweet treats.
+              The ultimate Cleaning Experience. Where we treat your home with respect and give it the cleaning it deserves.
             </p>
           </div>
           <div className="mb-8 md:mb-0">
@@ -63,13 +63,13 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 flex flex-col justify-center items-center md:justify-start space-x-4">
               <li>
-                <FooterContactItem icon={<FaMapMarkerAlt />} text="123 Sweet Street, Donutville" />
+                <FooterContactItem icon={<FaMapMarkerAlt />} text="123 Sweet Street, Cleaning GA" />
               </li>
               <li>
                 <FooterContactItem icon={<FaPhone />} text="+1 123 456 7890" />
               </li>
               <li>
-                <FooterContactItem icon={<FaEnvelope />} text="info@doughjoy.com" />
+                <FooterContactItem icon={<FaEnvelope />} text="info@vks.com" />
               </li>
             </ul>
           </div>
