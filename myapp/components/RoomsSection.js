@@ -2,8 +2,11 @@ import React from 'react';
 import front from "../public/front.png"
 import liveroom from "../public/liveroom.png"
 import cleanKitchen from "../public/cleanKitchen.png"
-import broom from "../public/broom.png"
 import Image from 'next/image';
+import car1 from "../public/car1.png"
+import carin from "../public/carin.png"
+import commerical from "../public/commerical.png"
+
 
 
 const RoomItem = ({ imageSrc, altText, title }) => (
@@ -34,19 +37,19 @@ const RoomsSection = () => {
       title: 'CleanKitchen',
     },
     {
-        imageSrc: front,
-        altText: 'Room',
-        title: 'Room',
+        imageSrc: car1,
+        altText: 'Car',
+        title: 'Car',
       },
       {
-        imageSrc: liveroom,
-        altText: 'Livingroom',
-        title: 'LivingRoom',
+        imageSrc: carin,
+        altText: 'Vehicle Interior',
+        title: 'Vehicle Interior',
       },
       {
-        imageSrc: cleanKitchen,
-        altText: 'CleanKitchen',
-        title: 'CleanKitchen',
+        imageSrc: commerical,
+        altText: 'Commerical',
+        title: 'Commerical',
       },
   ];
 
