@@ -10,15 +10,18 @@ import commerical from "../public/commerical.png"
 
 
 const RoomItem = ({ imageSrc, altText, title }) => (
-  <a
-    href="#"
-    className="relative"
-  >
-    <Image src={imageSrc} className="w-full h-full object-cover" alt={altText} />
-    <div className="absolute bottom-0 left-2/4 -translate-x-2/4 text-white font-medium uppercase text-xl md:text-2xl font-barlow z-10 px-4 mb-14 text-center w-full tracking-widest">{title}</div>
-  </a>
-);
-
+    <a
+      href="#"
+      className="relative overflow-hidden group"
+    >
+      <div className="group-hover:scale-105 transition-transform duration-300 ease-in-out">
+        <Image src={imageSrc} className="w-full h-full object-cover transform scale-100 group-hover:scale-105" alt={altText} />
+      </div>
+      <div className="absolute bottom-0 left-2/4 -translate-x-2/4 text-black font-medium uppercase text-xl md:text-2xl font-barlow z-10 px-4 mb-14 text-center w-full tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        {title}
+      </div>
+    </a>
+  );
 const RoomsSection = () => {
   const rooms = [
     {
@@ -56,7 +59,7 @@ const RoomsSection = () => {
   return (
     <section className="py-16 px-3">
       <div className="container mx-auto">
-        <h2 className="font-normal text-3xl sm:text-[46px] text-center mb-3">Results and Room</h2>
+        <h2 className="font-normal text-3xl sm:text-[46px] text-center text-primary mb-3">Results and Room</h2>
           <div className="grid gap-10 md:grid-cols-2 py-10">
           <p className="text-black opacity-60 font-light text-base sm:text-lg font-barlow first-letter:text-4xl first-letter:font-bold first-letter:tracking-[.03em]">
           VKS Cleaning is your trusted partner in creating pristine and inviting spaces. With a passion for cleanliness and a commitment to excellence, we specialize in delivering top-tier cleaning solutions that transform environments.
